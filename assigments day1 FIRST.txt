@@ -1,0 +1,39 @@
+
+QUESTION NUMBER 1
+
+ANSWER
+S.No.	Compiler	                                                Interpreter
+1.	Compiler scans the whole program in one go.	   Translates program one statement at a time.
+2.	As it scans the code in one go, the errors (if any)	Considering it scans code one line at a time, errors are shown line by line.
+ are shown at the end together.	
+3.	Main advantage of compilers is it’s execution time.	Due to interpreters being slow in executing the object code, it is preferred less.
+4.	It converts the source code into object code.	      It does not convert source code into object code instead it scans it line by line
+5	It does not require source code for later execution.	It requires source code for later execution.
+
+
+
+
+QUESTIN NUMBER 2
+ANSWER
+
+class Student{  
+ int rollno;  
+ String name;  
+ float marks;
+ void insertRecord(int r, String n,float m){  
+  rollno=r;  
+  name=n; 
+  marks=m; 
+ }  
+ void displayInformation(){System.out.println(rollno+" "+name+" "+marks);}  
+}  
+class TestStudent4{  
+ public static void main(String args[]){  
+  Student s1=new Student();  
+  Student s2=new Student();  
+  s1.insertRecord(111,"Karan",460);  
+  s2.insertRecord(222,"Aryan",488);  
+  s1.displayInformation();  
+  s2.displayInformation();  
+ }  
+}
